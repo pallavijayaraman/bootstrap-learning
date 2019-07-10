@@ -131,38 +131,33 @@
 
 <button type="button" class="btn btn-link">Link</button>
 
+<br> <hr>
 
-<br>
-<hr>
+<h2>Button group</h2>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-primary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-warning">Right</button>
+</div>
+<br> <hr>
 
+<h2>Cards</h2>
 
 <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="img/tech.jpg" class="card-img-top" alt="tech">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="mb-auto card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Click here</a>
   </div>
 </div>
 
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample"
-  role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse"
-  data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-target
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-    terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-     labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
+<br> <hr>
+<h2>Carousal</h2>
 
+
+<br> <hr>
+<h2>Dropdown</h2>
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Dropdown button
@@ -171,6 +166,23 @@
     <a class="dropdown-item" href="#">Action</a>
     <a class="dropdown-item" href="#">Another action</a>
     <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+<!-- Example single danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
   </div>
 </div>
 <hr> <br>
@@ -202,15 +214,8 @@
   <a class="dropdown-item" href="#">Separated link</a>
 </div>
 </div>
-<br><hr>
 
-<!-- Example split danger button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger">Action</button>
-  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
+
   <div class="dropdown-menu">
     <a class="dropdown-item" href="#">Action</a>
     <a class="dropdown-item" href="#">Another action</a>
@@ -219,7 +224,7 @@
     <a class="dropdown-item" href="#">Separated link</a>
   </div>
 </div>
-
+<br><hr>
 <div class="btn-group">
   <button type="button" class="btn btn-primary"> Action</button>
   <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
@@ -267,6 +272,9 @@ data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
   </div>
 </div>
+<br><hr>
+
+<h2>Forms</h2>
 
 <form>
   <div class="form-group">
@@ -287,17 +295,62 @@ data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
+<hr>
 <form>
   <div class="form-group">
     <label for="exampleFormControlFile1">Example file input</label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1">
   </div>
 </form>
+<input class="form-control" type="text" placeholder="Readonly input here..." readonly>
 
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
- </button>
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+<input class="form-control" type="text" placeholder="Default input">
+<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+<br>
+<form class="form-inline">
+  <div class="form-group mb-2">
+    <label for="staticEmail2" class="sr-only">Email</label>
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail2"
+    value="email@example.com">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="inputPassword2" class="sr-only">Password</label>
+    <input type="password" class="form-control" id="inputPassword2"
+     placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+</form>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Second default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+  <label class="form-check-label" for="exampleRadios3">
+    Disabled radio
+  </label>
+</div>
+<br>
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+  </div>
+</form>
 </main> <!-- /.container -->
 
 
